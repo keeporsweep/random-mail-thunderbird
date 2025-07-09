@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Random Mail",
+  "description": "Open a random mail from any folder! (Except spam and trash.)",
+  "version": "1.0",
+  "author": "Jan C. Borchardt",
+  "applications": {
+    "gecko": {
+      "id": "random-mail@keeporsweep.net",
+      "strict_min_version": "91.0"
+    }
+  },
+  "icons": {
+    "96": "icon.svg",
+    "64": "icon.svg",
+    "32": "icon.svg",
+    "16": "icon.svg"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "accountsRead",
+    "messagesRead"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "96": "icon.svg",
+      "64": "icon.svg",
+      "32": "icon.svg",
+      "16": "icon.svg"
+    },
+    "default_title": "Random Mail"
+  }
+}
